@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el marcador */
+.marcador {
+    background-color: #4CAF50; /* Color verde */
+    color: white; /* Texto en blanco */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    font-size: 24px; /* Tamaño de fuente */
+}
+
+/* Estilo para el contenedor de divs */
+.juego {
+    display: flex; /* Usar flexbox para diseño horizontal */
+    justify-content: space-around; /* Espaciado entre los divs */
+    padding: 20px; /* Espaciado interno */
+    
+}
+
+/* Estilo para cada div */
+.div {
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 15%; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 30%; /* Ancho de cada div */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    text-align: center;
+}
+
+/* Animación al hacer clic en los botones */
+.clicked {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Mensaje de resultado de la IA */
+.result {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+    animation: fadeInOut 1s forwards;
+}
+
+/* Animación para desvanecer el mensaje de la IA */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Estilos para mostrar las elecciones en grande */
+.resultado {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.resultado div {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 40%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.resultado span {
+    display: inline-block;
+    font-size: 50px;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animación de agrandar las elecciones */
+.show {
+    transform: scale(1.3);
+}

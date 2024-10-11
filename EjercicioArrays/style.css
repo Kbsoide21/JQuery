@@ -1,0 +1,18 @@
+fieldset {
+    display: flex;
+    border-style:solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+}
+
+.array{
+    display:flex;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    padding: 20px;
+    width: 800px;
+}

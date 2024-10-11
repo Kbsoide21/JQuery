@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Contenedor de las cartas */
+.cartas {
+    display: flex;
+    justify-content: center; /* Centramos las cartas */
+    gap: 500px; /* Espacio entre las cartas */
+}
+
+/* Estilos para la carta */
+.carta {
+    width: 150px;
+    height: 220px;
+    perspective: 1000px; /* Para crear el efecto 3D */
+    position: relative;
+}
+
+/* Cara de la carta (frontal y trasera) */
+.cara {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Oculta la cara trasera */
+    transition: transform 0.6s; /* Efecto de giro suave */
+    transform-style: preserve-3d;
+}
+
+/* Estilo para la parte trasera */
+.trasera {
+    transform: rotateY(0deg); /* La parte trasera está visible al inicio */
+}
+
+/* Estilo para la parte frontal (cara de la carta) */
+.frontal {
+    transform: rotateY(180deg); /* Inicialmente está oculta */
+}
+
+/* Girar la carta al pasar el ratón */
+.carta:hover .trasera {
+    transform: rotateY(180deg);
+}
+
+.carta:hover .frontal {
+    transform: rotateY(0deg);
+}
+
+/* Asegurarse de que las cartas se mantengan en su posición */
+.carta {
+    position: relative;
+    display: inline-block;
+}
+
+
