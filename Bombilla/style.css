@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.bombilla, .boton, .intensidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bombilla img {
+    width: 95%; /* Aumenta el tamaño de la bombilla */
+    height: 100%;
+}
+
+.boton img {
+    width: 100px; /* Puedes ajustar el tamaño del botón si es necesario */
+}
+
+.intensidad input[type="range"] {
+    width: 150px;
+}
+
+/* Estilos para la barra de intensidad */
+.intensidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}

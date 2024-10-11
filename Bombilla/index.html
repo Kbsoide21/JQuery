@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de bombilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Bombilla (izquierda) -->
+        <div class="bombilla">
+            <div class="bapagada">
+                <img src="off.jpg" alt="Bombilla apagada" id="bombilla-img">
+            </div>
+        </div>
+        
+        <!-- Botón (centro) -->
+        <div class="boton">
+            <img src="boff.jpg" alt="Botón apagado" id="boton-img">
+        </div>
+
+        <!-- Barra de intensidad (derecha) -->
+        <div class="intensidad">
+            <label for="intensidad">Intensidad:</label>
+            <input type="range" id="intensidad" min="0" max="100" value="100">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

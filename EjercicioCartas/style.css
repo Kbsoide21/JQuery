@@ -2,21 +2,25 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    max-width: 100%
 }
 
 /* Contenedor de las cartas */
 .cartas {
     display: flex;
     justify-content: center; /* Centramos las cartas */
-    gap: 500px; /* Espacio entre las cartas */
+    gap: 550px; /* Espacio entre las cartas */
 }
 
 /* Estilos para la carta */
+.carta {
+    width: 150px;
+    height: 220px;
+    perspective: 1000px; /* Para crear el efecto 3D */
+    position: relative;
+}
 .carta {
     width: 150px;
     height: 220px;
